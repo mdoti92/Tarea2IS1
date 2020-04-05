@@ -19,4 +19,10 @@ public class FuncionesUsuario {
         
         return 0;
     }
+    
+    public Usuario cobroSueldo(Usuario u, int sueldo){
+        int saldo = u.getSaldo() + sueldo;
+        u.setSaldo(saldo);
+        return u;
+    }
 }
