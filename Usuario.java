@@ -12,4 +12,62 @@ public class Usuario {
     private int cantidadDeHijos;
     private int saldo = 0;
     
+	public Usuario() {
+    }
+    
+    public Usuario(String nombre, String cedula, String contrasenia, int edad, int cantidadDeHijos) {
+        this.nombre = nombre;
+        this.cedula = cedula;
+        this.contrasenia = contrasenia;
+        this.edad = edad;
+        this.cantidadDeHijos = cantidadDeHijos;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getCedula() {
+        return cedula;
+    }
+
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
+    }
+
+    public String getContrasenia() {
+        return contrasenia;
+    }
+
+    public void setContrasenia(String contrasenia) {
+        this.contrasenia = contrasenia;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public int getCantidadDeHijos() {
+        return cantidadDeHijos;
+    }
+
+    public void setCantidadDeHijos(int cantidadDeHijos) {
+        this.cantidadDeHijos = cantidadDeHijos;
+    }
+
+    public int getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(int saldo) {
+        this.saldo = saldo;
+    }
 }
